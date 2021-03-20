@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+branch = `git branch`.match(/\*\s*(.*)\s/)[1]
+q = "git pull origin #{branch}"
+puts q
+`#{q}`
